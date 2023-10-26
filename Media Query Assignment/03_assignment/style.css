@@ -1,0 +1,44 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container section */
+.container{
+    height: 100vh;
+    border: 1px solid #000000;
+}
+/* nav bar section */
+.container nav{
+    background-color: #000000;
+    padding: 5px;
+    margin: 5px;
+   
+    
+
+}
+/* ul section */
+.container nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+@media only screen and (max-width:768px){
+    .container nav{
+        background-color: #808080;
+    }
+    .container nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

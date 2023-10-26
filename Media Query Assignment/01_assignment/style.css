@@ -1,0 +1,25 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Container section */
+.container{
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin: auto;
+} 
+.container .heading{
+    background-color: #eff0f2;
+    padding: 40px;
+    text-align: center;
+}
+@media only screen and (max-width:600px) {
+    .container .heading{
+        background-color: #0000ff;
+    }
+}

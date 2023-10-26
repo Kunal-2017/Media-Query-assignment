@@ -1,0 +1,50 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/* grid container */
+.grid-container{
+    height: 90vh;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    padding: 10px;
+    
+    
+}
+/* grid item for same properties */
+.grid-item{
+    color:#ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+.box1{
+    
+    background-color: #ff0000;
+
+}
+.box2{
+    
+    background-color: #008000;
+}
+.box3{
+    
+    background-color: #0000ff;
+    
+}
+.box4{
+    
+    background-color: #714a02;
+    
+}
+@media only screen and (max-width:500px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+    }
+}
